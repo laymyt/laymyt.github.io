@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的项目主页</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background: #2c3e50; color: #fff; padding: 40px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        header p { font-size: 1.2em; color: #bdc3c7; }
+        .container { width: 80%; max-width: 900px; margin: 30px auto; overflow: hidden; }
+        .project-card { background: #fff; margin-bottom: 25px; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card h3 { margin-top: 0; color: #2980b9; font-size: 1.5em; border-bottom: 2px solid #eee; padding-bottom: 10px;}
+        .tag { display: inline-block; background: #e0eaf1; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; margin-right: 8px; margin-top: 10px; color: #2c3e50; font-weight: bold;}
+        footer { text-align: center; padding: 20px; background: #2c3e50; color: #fff; margin-top: 40px; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>你好，我是 [你的名字]</h1>
+        <p>控制工程硕士 | 专注机器人视觉与边缘计算部署</p>
+    </header>
+
+    <div class="container">
+        <h2>精选项目</h2>
+
+        <div class="project-card">
+            <h3>基于 ROS 的无人机视觉定位与建图</h3>
+            <p>使用 C++ 和 OpenCV 开发视觉处理节点，结合 D435i 深度相机的内参标定与数据流，实现无人机在复杂环境下的空间定位与状态估计。</p>
+            <div>
+                <span class="tag">ROS</span>
+                <span class="tag">C++</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">D435i</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>RK3588 平台深度学习模型加速部署</h3>
+            <p>搭建完整的模型转换工作流，将基于 PyTorch 训练的目标检测模型（.pt）导出为 ONNX 格式，并利用 RKNN-Toolkit2 编译，最终在 RK3588 的 NPU 上实现高效推理。</p>
+            <div>
+                <span class="tag">RK3588</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">RKNN</span>
+                <span class="tag">模型部署</span>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <h3>开发板环境自动化配置与测试</h3>
+            <p>为树莓派等嵌入式设备编写配置文档与脚本，解决 SSH 远程连接、VS Code 远程开发配置以及基础硬件接口调用的常见问题。</p>
+            <div>
+                <span class="tag">Raspberry Pi</span>
+                <span class="tag">Linux</span>
+                <span class="tag">VS Code SSH</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>联系方式: <a href="mailto:[你的邮箱]">[你的邮箱]</a> | GitHub: <a href="[你的GitHub主页链接]">@[你的GitHub用户名]</a></p>
+    </footer>
+
+</body>
+</html>
